@@ -31,10 +31,10 @@ def main():
     # -------------------------------------------------------------------------
 
     # run_test_generate_points_on_circle()
-    # run_test_draw_points_on_circle()
+    run_test_draw_points_on_circle()
     # run_test_pizza()
     # run_test_polygon()
-    run_test_fancy_polygon()
+    # run_test_fancy_polygon()
 
 
 def run_test_generate_points_on_circle():
@@ -191,10 +191,11 @@ def run_test_draw_points_on_circle():
     # Test 4:  (YOU write THIS test)
     # -------------------------------------------------------------------------
     # Test 4:
-    title = 'DRAW_POINTS_ON_CIRCLE, test 4:  4 blue dots.'
+    title = 'DRAW_POINTS_ON_CIRCLE, test 4:  80 purple dots.'
     window = rg.RoseWindow(400, 400, title)
     circle = rg.Circle(rg.Point(200, 200), 150)
-    draw_points_on_circle(window, circle, 4, 'blue')
+    circle.fill_color = 'black'
+    draw_points_on_circle(window, circle, 80, 'purple')
     window.close_on_mouse_click()
 
 
